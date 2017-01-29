@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>CompanyDex</title>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <form name = "login" action ="index_submit" method="get" accept-charset="utf-8">
+        <div>
+            <label>Email</label>
+            <input type="text">
+        </div>
+        
+        <div>
+            <label>Password</label>
+            <input type="text">
+        </div>
+        
+        <form action="">
+            <div>
+            <input type="checkbox">Remember Me
+            </div>
+        </form>
+
+        <div>
+            <a href="home.html"><input type="submit" value="Login"></a>
+        </div>
+    </form>
+</body>
+    
+</html>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCu2qXqHCH7GY1elKH0u_4nIwQ1Q3AxHP8",
+    authDomain: "companydex-dbaeb.firebaseapp.com",
+    databaseURL: "https://companydex-dbaeb.firebaseio.com",
+    storageBucket: "companydex-dbaeb.appspot.com",
+    messagingSenderId: "658056532077"
+  };
+  firebase.initializeApp(config);
+</script>

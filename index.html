@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8"/>
+    <title>CompanyDex</title>
+</head>
+
+<body>
+    
+    <div class = "companydex">
+    <p>CompanyDex</p>
+     <input type="text" placeholder="Search">
+    </div>
+    
+    <div class ="header">
+        <p>Welcome Angela</p>
+        <h1>Your Companies</h1>
+    </div>
+    
+    <div class = "sidebar">
+        <a href="home.html">Home</a>
+        <a href="groups.html">Group</a>
+        <a href="trash.html">Trash</a>
+    </div>
+    
+    <div>
+    <div><button onclick="window.location.href='addcompany.html'">+Company</button></div>
+    </div>
+    
+    <div class="categories">
+    <table>
+    <tr>
+        <th>Status</th>
+        <th>Company</th>
+        <th>Job Titles</th>
+        <th>Actions</th>
+        <th>
+            <select>
+            <option value ="">Sort By</option>
+            </select>
+        </th>
+    </tr>
+        
+    <tr>
+        <td>Accepted</td>
+         <td>Company A</td>
+         <td>Job A</td>
+         <td>
+            <button>Edit</button>
+            <button>Copy</button>
+            <button>Delete</button>
+         </td>
+        <td></td>
+    </tr>
+        
+    <tr>
+        <td>Waiting</td>
+         <td>Company B</td>
+         <td>Job B</td>
+         <td>
+            <button>Edit</button>
+            <button>Copy</button>
+            <button>Delete</button>
+         </td>
+         <td></td>
+    </tr>
+        
+    <tr>
+        <td>Rejected</td>
+         <td>Company C</td>
+         <td>Job C</td>
+         <td>
+            <button>Edit</button>
+            <button>Copy</button>
+            <button>Delete</button>
+         </td>
+         <td></td>
+    </tr>
+    
+    </table>
+    </div>
+</body>
+    
+</html>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCu2qXqHCH7GY1elKH0u_4nIwQ1Q3AxHP8",
+    authDomain: "companydex-dbaeb.firebaseapp.com",
+    databaseURL: "https://companydex-dbaeb.firebaseio.com",
+    storageBucket: "companydex-dbaeb.appspot.com",
+    messagingSenderId: "658056532077"
+  };
+  firebase.initializeApp(config);
+</script>
